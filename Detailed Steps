@@ -1,0 +1,26 @@
+Extracting Size Information: A new column named "Size" was created by extracting values from the "product_detail" column. The sizes were coded as follows: "Rg" for regular, "Lg" for large, and "Sm" for small. If no size was mentioned, it was labeled as "Not Defined." This was done using a conditional column in Power Query Editor.
+Cleaning Product Details: The terms "Rg," "Lg," and "Sm" were then removed from the "product_detail" column, replacing them with spaces, since this information was now stored in the newly created "Size" column.
+Trimming Extra Spaces: Any extra spaces in the "product_detail" column were removed using the "Transform" feature. Specifically, the "Extract" option was utilized to apply the "Trim" function in Power Query Editor.
+Calculating Total Bill: A new column named "Total Bill" was created by multiplying the "transaction_qty" by the "unit_price." This calculation provides the total amount for each transaction.
+Cleaning Transaction Time: The unnecessary date information in the "transaction_time" column was removed by using the "Transform" feature. Specifically, the "Extract" option was employed to select "Text After Delimiter" in the Power Query toolbar, isolating only the relevant time data.
+Extracting Month and Day Names: Two new columns, "Month Name" and "Day Name," were created by extracting the respective month and day names from the "transaction_date" column. This was achieved by adding columns in Power Query.
+Ensuring Correct Data Types: Each column was reviewed and adjusted to ensure it has the correct data type. This step is crucial for accurate analysis and processing of the data.
+
+#Enabling Developer and Power Pivot: To enable the Developer and Power Pivot features in Excel, follow these steps:
+1.Go to File > Options.
+2.In the Customize Ribbon section, check the box for Developer to enable the Developer tab.
+3.After enabling the Developer tab, access the COM Add-Ins from the toolbar and enable Power Pivot for Microsoft Excel.
+
+Selecting Pivot Table from Data Model: Choose to create a Pivot Table from the data model. This allows for the creation of measures, enabling more advanced calculations and insights from the data.
+
+#Arranging Day of the Week and Month Order: To ensure that the day of the week and month names are arranged in the correct order in the Pivot Table, follow these steps:
+1.Launch Power Query by going to Get Data and selecting Launch Power Query.
+2.Add numeric columns for the day of the week and month from the "transaction_date" column.
+3.Close and load the data back to Excel.
+4.In Power Pivot, go to Manage, then select the "Month Name" column.
+5.Navigate to the Home tab, click on Sort, and choose Sort By Column to sort by the corresponding numeric month values. Repeat this process for the "Day of the Week" column.
+
+Insert the Pivot Tables and corresponding charts into your worksheet.
+Add slicers to filter data effectively and connect them to the relevant Pivot Tables using Report Connections.
+Arrange the charts on the dashboard so that they remain in fixed positions and do not move when the worksheet is adjusted.
+To protect the sheet while ensuring the slicers remain editable, go to the Home tab and select Protect Sheet. Ensure that the option to allow slicers to remain unlocked is checked.
