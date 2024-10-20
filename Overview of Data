@@ -1,0 +1,14 @@
+The Excel file contains a single sheet named "Transactions". Here is an overview of the data and the list of columns:
+
+Columns:
+transaction_id – Unique ID for each transaction
+transaction_date – Date of the transaction
+transaction_time – Time of the transaction
+transaction_qty – Quantity of products purchased in the transaction
+store_id – ID of the store where the transaction occurred
+store_location – Location of the store
+product_id – ID of the product purchased
+unit_price – Price per unit of the product
+product_category – Category of the product (e.g., Coffee, Tea)
+product_type – Specific type of the product (e.g., Brewed Coffee, Hot Chocolate)
+product_detail – Detailed description of the product (e.g., Ethiopia Rg, Spicy Eye Opener Chai Lg)
